@@ -5,14 +5,14 @@
 
 
 import streamlit as st
-from auth import login_with_google
+# from auth import login_with_google
 
-# Authenticate user before showing content
-if login_with_google():
-    st.title("Welcome to My Portfolio")
-    # Your content here...
-else:
-    st.stop()
+# # Authenticate user before showing content
+# if login_with_google():
+#     st.title("Welcome to My Portfolio")
+#     # Your content here...
+# else:
+#     st.stop()
 
 # Title and Header
 st.title("Priyesh's Portfolio")
