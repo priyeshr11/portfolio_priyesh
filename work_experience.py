@@ -52,8 +52,8 @@ if st.session_state.page == 'work_experience':
 
 elif st.session_state.page == 'education_page':
     import education_page  # assuming this is in a file called education_page.py
-elif st.session_state.page == 'work_experience':
-    import work_experience  # assuming this is in a file called work_experience.py
+elif st.session_state.page == 'main':
+    import main_page  # assuming this is in a file called work_experience.py
 elif st.session_state.page == 'sports_page':
     import sports_page  # assuming this is in a file called sports_page.py
 elif st.session_state.page == 'academics':
