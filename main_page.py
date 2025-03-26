@@ -26,7 +26,6 @@ if st.session_state.page == 'main':
     # Title and Header
     st.title("Priyesh's Portfolio")
     st.header("Welcome to My Personal Portfolio")
-    
     # Add profile image
     st.image("https://via.placeholder.com/150", caption="Priyesh's Photo", width=150)
     
@@ -68,20 +67,20 @@ if st.session_state.page == 'main':
     st.write("Explore More About Me:")
     
     
-    def set_page(page_name):
-        st.session_state.page = page_name
+    # def set_page(page_name):
+    #     st.session_state.page = page_name
     
     col1, col2, col3, col4, col5 = st.columns(5)
     with col1:
-        st.button("Education", on_click=set_page, args=("education_page",))
+        st.button("Education", on_click=show_page, args=("education_page",))
     with col2:
-        st.button("Work Experience", on_click=set_page, args=("work_experience",))
+        st.button("Work Experience", on_click=show_page, args=("work_experience",))
     with col3:
-        st.button("Sports Interest", on_click=set_page, args=("sports_page",))
+        st.button("Sports Interest", on_click=show_page, args=("sports_page",))
     with col4:
-        st.button("Academic Experience", on_click=set_page, args=("academics",))
+        st.button("Academic Experience", on_click=show_page, args=("academics",))
     with col5:
-        st.button("Research Projects", on_click=set_page, args=("research_work",))
+        st.button("Research Projects", on_click=show_page, args=("research_work",))
     
 
 elif st.session_state.page == 'education_page':
