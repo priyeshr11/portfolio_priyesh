@@ -28,31 +28,14 @@ st.write("""
 def set_page(page_name):
     st.session_state.page = page_name
     col1, col2, col3, col4, col5 = st.columns(5)
-    with col1:
-        st.button("Education", on_click=set_page, args=("education_page",))
-    with col2:
-        st.button("Home", on_click=set_page, args=("main_page",))
-    with col3:
-        st.button("Sports Interest", on_click=set_page, args=("sports_page",))
+    	with col1:
+        	st.button("Education", on_click=set_page, args=("education_page",))
+   	with col2:
+        	st.button("Home", on_click=set_page, args=("main_page",))
+	with col3:
+		st.button("Sports Interest", on_click=set_page, args=("sports_page",))
 	with col4:
-        st.button("Academic Experience", on_click=set_page, args=("academics",))
+        	st.button("Academic Experience", on_click=set_page, args=("academics",))
 	with col5:
-        st.button("Research Projects", on_click=set_page, args=("research_work",))
-            
-elif st.session_state.page == 'education_page':
-	import education_page  # assuming this is in a file called education_page.py
-elif st.session_state.page == 'main_page':
-    import main_page  # assuming this is in a file called work_experience.py
-elif st.session_state.page == 'sports_page':
-    import sports_page  # assuming this is in a file called sports_page.py
-elif st.session_state.page == 'academics':
-    import academics  # assuming this is in a file called academics.py
-elif st.session_state.page == 'research_work':
-	import research_work  # assuming this is in a file called research_work.py    
-        
-        
-    # In[ ]:
-    
-    
-    
-    
+        	st.button("Research Projects", on_click=set_page, args=("research_work",))
+  
