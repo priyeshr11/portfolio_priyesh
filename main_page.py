@@ -5,7 +5,7 @@
 
 
 import streamlit as st
-from authentication import login_with_google
+from auth import login_with_google
 
 # Authenticate user before showing content
 if login_with_google():
