@@ -68,8 +68,8 @@ if st.session_state.page == 'main':
     st.write("Explore More About Me:")
     
     
-    # def set_page(page_name):
-    #     st.session_state.page = page_name
+    def set_page(page_name):
+        st.session_state.page = page_name
     
     col1, col2, col3, col4, col5 = st.columns(5)
     with col1:
