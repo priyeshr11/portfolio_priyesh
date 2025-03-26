@@ -33,7 +33,7 @@ st.write("""
     with col1:
         st.button("Education", on_click=set_page, args=("education_page",))
     with col2:
-        st.button("Work Experience", on_click=set_page, args=("main_page",))
+        st.button("Home", on_click=set_page, args=("main_page",))
     with col3:
         st.button("Sports Interest", on_click=set_page, args=("sports_page",))
     with col4:
