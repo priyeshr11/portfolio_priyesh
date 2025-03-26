@@ -33,7 +33,7 @@ st.write("""
     with col1:
         st.button("Education", on_click=set_page, args=("education_page",))
     with col2:
-        st.button("Work Experience", on_click=set_page, args=("work_experience",))
+        st.button("Work Experience", on_click=set_page, args=("main_page",))
     with col3:
         st.button("Sports Interest", on_click=set_page, args=("sports_page",))
     with col4:
@@ -44,8 +44,8 @@ st.write("""
 
 elif st.session_state.page == 'education_page':
     import education_page  # assuming this is in a file called education_page.py
-elif st.session_state.page == 'work_experience':
-    import work_experience  # assuming this is in a file called work_experience.py
+elif st.session_state.page == 'main_page':
+    import main_page  # assuming this is in a file called work_experience.py
 elif st.session_state.page == 'sports_page':
     import sports_page  # assuming this is in a file called sports_page.py
 elif st.session_state.page == 'academics':
