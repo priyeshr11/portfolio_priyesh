@@ -105,11 +105,51 @@ if 'page' not in st.session_state:
 def show_page(page_name):
     st.session_state.page = page_name
 
-# Main page content
+# Show content based on the current page
 if st.session_state.page == 'main':
-    st.title("Welcome to My Portfolio")
-    # Your content for the main page
-    st.write("Welcome to my personal portfolio! Explore my work and experience.")
+        
+    # Title and Header
+    st.title("Priyesh's Portfolio")
+    st.header("Welcome to My Personal Portfolio")
+    # Add profile image
+    st.image("https://via.placeholder.com/150", caption="Priyesh's Photo", width=150)
+    
+    # Introduction
+    st.subheader("About Me")
+    st.write("""
+        Hello! I'm Priyesh, a passionate data scientist with a love for sports. My career focuses on solving complex data problems, 
+        using machine learning to create predictive models, and telling stories through data. 
+        I enjoy exploring the world of technology, but when I'm not analyzing data, you can find me on the sports field or reading about new trends in AI.
+        """)
+    
+    # Career Interests Blog
+    st.subheader("My Career Interests")
+    st.write("""
+        I'm deeply interested in leveraging machine learning and artificial intelligence to drive data-driven decisions.
+        I enjoy working with large datasets, predictive analytics, and working on innovative tech solutions. 
+        I aim to contribute to impactful projects in the tech industry, especially those that combine data science with real-world applications.
+        """)
+    
+    # Sports Interests Blog
+    st.subheader("My Sports Interests")
+    st.write("""
+        Sports are a huge part of my life. I believe sports teach important life lessons such as teamwork, discipline, and resilience.
+        I regularly participate in basketball, football, and tennis. I aim to stay active and challenge myself in various sports, both for fitness and fun.
+        """)
+    
+    # Add an image related to sports (e.g., a basketball image)
+    st.image("https://via.placeholder.com/300x200?text=Sports+Image", caption="My Sports Interests", use_container_width=True)
+    
+    # Social Media Links
+    st.subheader("Connect With Me")
+    st.write("""
+        - [LinkedIn](https://linkedin.com/in/username)
+        - [GitHub](https://github.com/username)
+        - [Twitter](https://twitter.com/username)
+        """)
+    
+    # Buttons linking to other pages
+    st.write("Explore More About Me:")
 
     # Buttons to navigate to different pages
     col1, col2, col3, col4, col5 = st.columns(5)
