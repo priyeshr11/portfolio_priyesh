@@ -7,15 +7,7 @@
 import streamlit as st
 
 
-if 'page' not in st.session_state:
-    st.session_state.page = 'work_experience'
 
-# Function to display pages based on the session state
-def show_page(page_name):
-    st.session_state.page = page_name
-
-# Show content based on the current page
-if st.session_state.page == 'work_experience':
     st.title("Work Experience")
     
     # Add Work Experience Image
