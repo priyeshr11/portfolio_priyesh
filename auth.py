@@ -18,4 +18,3 @@ def login_with_google():
     else:
         oauth.login("Login with Google")
         return False
-
