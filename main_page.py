@@ -224,11 +224,54 @@ elif st.session_state.page == 'education_page':
 
 # Repeat similar structure for other pages like 'sports_page', 'academics', etc.
 elif st.session_state.page == 'sports_page':
-    # Add content for sports page
-    pass
+    st.title("Sports Interests")
+
+# Add Sports Image
+    st.image("https://via.placeholder.com/300x200?text=Sports+Image", caption="My Sports Activities", use_column_width=True)
+    
+    st.write("""
+        - **Basketball**: I actively play basketball at the [XYZ Basketball Club](https://link-to-your-sports-club.com).
+        - **Football**: I regularly participate in local football leagues, and I’m part of the [ABC FC](https://link-to-your-football-team.com).
+        - **Tennis**: I enjoy playing tennis during weekends at the [Tennis Academy](https://link-to-your-tennis-academy.com).
+        """)
+        # Buttons to navigate to different pages
+    col1, col2, col3, col4, col5 = st.columns(5)
+    with col1:
+        st.button("Home", on_click=show_page, args=("main",))
+    with col2:
+        st.button("Education", on_click=show_page, args=("education_page",))
+    with col3:
+        st.button("Work Experience", on_click=show_page, args=("work_experience",))
+    with col4:
+        st.button("Academic Experience", on_click=show_page, args=("academics",))
+    with col5:
+        st.button("Research Projects", on_click=show_page, args=("research_work",))
+        
 elif st.session_state.page == 'academics':
-    # Add content for academics page
-    pass
+    st.title("Academic Experience")
+    
+    # Add Academic Image
+    st.image("https://via.placeholder.com/300x200?text=Academic+Experience", caption="My Academic Experience", use_column_width=True)
+    
+    st.subheader("Research Assistant - Data Science")
+    st.write("""
+        University of ABC, September 2023 - Present
+        - Assisted in research on applying machine learning models to analyze climate data.
+        - Worked on papers related to predictive analytics for environmental forecasting.
+        """)
 elif st.session_state.page == 'research_work':
-    # Add content for research work page
-    pass
+    
+    st.title("Research Projects")
+    
+    # Add Research Image
+    st.image("https://via.placeholder.com/300x200?text=Research+Projects", caption="My Research Projects", use_column_width=True)
+    
+    st.subheader("Predictive Analytics for Sales Forecasting")
+    st.write("""
+        This project focused on building a model to predict sales based on historical data using regression techniques.
+        """)
+    
+    st.subheader("Customer Segmentation with Machine Learning")
+    st.write("""
+        A machine learning project using K-means clustering to identify customer groups based on purchasing behavior.
+        """)
