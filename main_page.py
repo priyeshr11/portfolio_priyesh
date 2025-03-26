@@ -146,7 +146,7 @@ elif st.session_state.page == 'sports_page':
     st.title("Sports Interests")
 
 # Add Sports Image
-    st.image("https://via.placeholder.com/300x200?text=Sports+Image", caption="My Sports Activities", use_column_width=True)
+    st.image("https://via.placeholder.com/300x200?text=Sports+Image", caption="My Sports Activities", use_container_width=True)
     
     st.write("""
         - **Basketball**: I actively play basketball at the [XYZ Basketball Club](https://link-to-your-sports-club.com).
@@ -170,7 +170,7 @@ elif st.session_state.page == 'academics':
     st.title("Academic Experience")
     
     # Add Academic Image
-    st.image("https://via.placeholder.com/300x200?text=Academic+Experience", caption="My Academic Experience", use_column_width=True)
+    st.image("https://via.placeholder.com/300x200?text=Academic+Experience", caption="My Academic Experience", use_container_width=True)
     
     st.subheader("Research Assistant - Data Science")
     st.write("""
@@ -198,7 +198,7 @@ elif st.session_state.page == 'research_work':
     st.title("Research Projects")
     
     # Add Research Image
-    st.image("https://via.placeholder.com/300x200?text=Research+Projects", caption="My Research Projects", use_column_width=True)
+    st.image("https://via.placeholder.com/300x200?text=Research+Projects", caption="My Research Projects", use_container_width=True)
     
     st.subheader("Predictive Analytics for Sales Forecasting")
     st.write("""
